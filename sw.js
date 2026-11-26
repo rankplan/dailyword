@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dailyword-v2';
+const CACHE_NAME = 'dailyword-v3';
 const CORE_ASSETS = [
   './',
   './index.html',
