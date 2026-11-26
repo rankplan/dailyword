@@ -303,7 +303,7 @@
       .reminder-status { margin-top: 12px; font-size: 0.92rem; color: var(--ink-soft); min-height: 1.4em; }
 
       /* ---------- Language chips ---------- */
-      .lang-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+      .lang-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
       .lang-chip {
         min-height: 40px; padding: 8px 16px; border-radius: 999px;
         border: 1px solid var(--line); background: var(--surface);
@@ -442,13 +442,6 @@
         <div class="date" id="dateLine"></div>
       </header>
 
-      <nav class="lang-row" aria-label="Choose your language">
-        <button class="lang-chip" type="button" data-lang="de" aria-pressed="true">Deutsch</button>
-        <button class="lang-chip" type="button" data-lang="en" aria-pressed="false">English</button>
-        <button class="lang-chip" type="button" data-lang="it" aria-pressed="false">Italiano</button>
-        <button class="lang-chip" type="button" data-lang="es" aria-pressed="false">Español</button>
-        <button class="lang-chip" type="button" data-lang="fr" aria-pressed="false">Français</button>
-      </nav>
 
       <main>
         <section id="installSection" hidden aria-label="Install the app">
@@ -545,6 +538,18 @@
           </div>
         </section>
 
+        <section class="block" id="profileSection">
+          <h2>Profile</h2>
+          <div class="rule"></div>
+          <p class="sub">Learning language</p>
+        <nav class="lang-row" aria-label="Choose your language">
+          <button class="lang-chip" type="button" data-lang="de" aria-pressed="true">Deutsch</button>
+          <button class="lang-chip" type="button" data-lang="en" aria-pressed="false">English</button>
+          <button class="lang-chip" type="button" data-lang="it" aria-pressed="false">Italiano</button>
+          <button class="lang-chip" type="button" data-lang="es" aria-pressed="false">Español</button>
+          <button class="lang-chip" type="button" data-lang="fr" aria-pressed="false">Français</button>
+        </nav>
+        </section>
       </main>
 
       <footer>
